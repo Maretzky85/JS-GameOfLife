@@ -1,0 +1,17 @@
+#automaton{
+    display: inline-flex;
+}
+
+.active {
+    background-color: red;
+    height: 5px;
+    width: 5px;
+    /* margin: 1px */
+}
+
+.inactive {
+    background-color: black;
+    height: 5px;
+    width: 5px;
+    /* margin: 1px */
+}
