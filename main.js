@@ -6,5 +6,5 @@ document.addEventListener('DOMContentLoaded',
         game.init(100,100)
         view.populate(game.getBoard())
         setInterval( () => {game.nextGen()
-            view.update(game.getBoard())}, 1)
+            view.update(game.getBoard())}, 10)
      })
