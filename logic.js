@@ -72,5 +72,9 @@ let game = {
             }
         }
         this.mainActive = !this.mainActive
+    },
+    toggleCell: function(y, x) {
+        let board = this.getBoard();
+        board[y][x] = !board[y][x];
     }
 }

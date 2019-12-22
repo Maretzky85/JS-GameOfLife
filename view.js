@@ -1,7 +1,7 @@
 export {view as default}
 let view = {
     viewBoard: {},
-    populate: function (board) {
+    populate: function (board, onCellChange) {
         this.viewBoard = document.getElementById('automaton')
         for (let y = 0; y < board.length; y++) {
             const row = document.createElement('div');
@@ -14,6 +14,9 @@ let view = {
                 }
                 
                 row.appendChild(divElement)
+                divElement.addEventListener('click', () => {
+                    onCellChange(y, x);
+                })
             }
             this.viewBoard.appendChild(row)
         }
